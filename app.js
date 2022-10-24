@@ -17,3 +17,13 @@ function playRound(playerSelection, compSelection){
     }
 }
 
+function game() {
+    for (let i = 0; i < 5; i++) {
+        const playerSelection =  prompt("Pick a move: Rock, Paper or Scissors"); 
+        const compSelection = getComputerChoice();
+        
+        console.log(playRound(playerSelection, compSelection)); 
+    }
+}
+
+game();
