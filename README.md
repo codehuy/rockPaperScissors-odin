@@ -6,4 +6,4 @@ Rock Paper Scissors
 Rock Paper Scissors game in the javascript console. 
 
 ## Version History
-1.0
+2.0

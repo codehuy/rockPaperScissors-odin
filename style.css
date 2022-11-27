@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* full screen */ 
+    background-color: rgb(22, 39, 71);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    color: white;
+    font-size: x-large;
+}
+
+/* -------------- Score Board ----------------- */
+
+.score-board {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    color: white; 
+}
+
+.score-board h2 {
+    font-size: 32px;
+}
+
+.score-board h3 {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* -------------- Start Game ----------------- */
+.start-game {
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease;
+}
+
+.start-game button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: white; 
+    background:rgb(23, 89, 67);
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.start-game h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* -------------- Game ----------------- */
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1.5s ease; 
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cpu-hand {
+    transform: rotateY(180deg);
+}
+
+/* -------------- Options ----------------- */
+.options button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white; 
+    background:rgb(23, 89, 67);
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px; 
+}
+
+.action-display {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    gap: 40px;
+}
+/* -------------- Reset ----------------- */
+.reset button {
+    width: 60px;
+    height: 30px;
+    color: white; 
+    background:rgb(70, 75, 73);
+    border-radius: 10px;
+}
